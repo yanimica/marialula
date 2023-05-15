@@ -72,6 +72,15 @@ body>*:first-child {
     height: 100px;
 }
 
+.navbar a {
+transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+background-color: #ccc;
+}
+
+
 .menu {
     display: flex;
     list-style: none;
