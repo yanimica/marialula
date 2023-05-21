@@ -3,12 +3,45 @@
 
 .infoNuestra {
     padding: 2rem;
+}
 
+.nosotrosTitle{
+    color: rgb(242 24 121);
+}
+
+.imgLogo{
+    background-size: cover;
+    background-position: center;
 }
 
 
+.infoNuestra{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: (0,0,0,0);
+    background-image: linear-gradient(
+        0deg,
+        rgb(25 55 175 / 15%),
+        #fff
+    )
+    ,url(../img/home.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.color-acento{ color: rgb 242 24 121;}
 
 /*-------------------------- nuestros juegos ----------------------------------------*/
+main{
+    font-family: 'Hind Madurai', sans-serif;
+   /*  font-family: 'Klee One', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Zilla Slab', serif; */
+}
 
 .mainNuestrosJuegos {
     display: grid;
@@ -55,6 +88,7 @@ body{
 body>*:first-child {
     margin-top: 80px;     /* Altura de la navbar */
 }
+
 
 .navbar {
     display: flex;
@@ -261,3 +295,13 @@ button:hover {
     color: #1877f2;
 }
 
+/*-------------------------- Preguntas frecuentes----------------------------------------*/
+
+.titlePreguntas{
+    display: flex;
+    justify-content: center;
+}
+
+.subTitle{
+    padding: 1.5rem;
+}
