@@ -1,0 +1,14 @@
+.foot{
+    background-color: #f9afce;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    img{
+        width: 6em;
+        margin-right: 10px;
+        .social-links{
+            padding: 2em;
+            font-size: 2rem;
+        }
+    }
+}

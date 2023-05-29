@@ -1,0 +1,136 @@
+
+@import"_variables.scss";
+
+/*----------SHEETS--------*/
+
+@import"_preguntas.scss";
+@import"_juegos.scss";
+@import"_contacto.scss";
+@import"_nosotros.scss";
+
+
+/*----------PIE DE PÁGINA--------*/
+
+@import"_footer.scss";
+
+/*----------MEDIA QUERIES--------*/
+
+@import"_responsive.scss";
+
+
+/*------------------------ Navbar-------------------------------- */
+
+body {
+    padding-top: 5px;
+}
+
+body>*:first-child {
+    margin-top: 80px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: #fff;
+}
+
+.navbar a {
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #ccc;
+}
+
+.navbar .logo img {
+    height: 100px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+
+/*------------------------ Index-------------------------------- */
+
+.video-container {
+    position: relative;
+    height: 100vh;
+
+    video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        object-fit: cover;
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+
+            h1 {
+                font-size: 4rem;
+                margin-bottom: 20px;
+
+                p {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+
+
+/*----------------------------- final-------------------------------- */
+
+
+.firma {
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5em;
+}
+
+.whatsapp-button {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 100;
+    color: white;
+    background-color: #4dc247;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    fill: white;
+    margin-right: 20px;
+    font-size: 32px;
+    text-decoration: none;
+}

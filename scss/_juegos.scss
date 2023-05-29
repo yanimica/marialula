@@ -1,0 +1,35 @@
+.mainNuestrosJuegos{
+    display: grid;
+    font-family: "Indie Flower", cursive;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 20px;
+    padding: 1.5rem;
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas:
+            "titulo titulo"
+            "img descripcion"
+            "botton botton";
+        border: 1px solid black;
+        padding: 25px;
+        margin-top: 6rem;
+        .titulo{
+            grid-area: titulo;
+            .img{
+                grid-area: img;
+                display: block;
+                margin: auto;
+                border-radius: 5%;
+                .descripcion{
+                    grid-area: descripcion;
+                    .botton{
+                        grid-area: botton;
+                    }
+                }
+            }
+        }
+    }
+}
