@@ -78,7 +78,7 @@
 
 .carousel-inner .carousel-item img {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
   height: 100%;
 }
@@ -370,7 +370,7 @@ button:hover {
 }
 
 /*----------MEDIA QUERIES--------*/
-/*--------------------- desktop----------------- */
+/*-------- desktop-------------- */
 @media screen and (max-width: 1200px) {
   .navbar {
     padding: 10px 40px;
@@ -600,11 +600,7 @@ button:hover {
   .container {
     margin-top: 3rem;
   }
-  /* 
-          .background-image .cuestionario {
-              margin-top: 10rem;
-              padding: 0.5rem;
-            } */
+
   .fotoHome img {
     max-width: 90%;
     height: auto;
