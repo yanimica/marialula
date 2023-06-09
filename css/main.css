@@ -223,6 +223,7 @@ button:hover {
   height: auto;
   margin-top: 10%;
   border-radius: 50%;
+  margin-top: 12rem;
 }
 
 .infoGral {
@@ -387,7 +388,7 @@ button:hover {
   .fotoHome img {
     max-width: 58%;
     height: auto;
-    margin-top: 6%;
+    margin-top: 19%;
     border-radius: 50%;
   }
   .infoGral {
@@ -464,9 +465,6 @@ button:hover {
   }
   .formulario form {
     padding: 3rem;
-  }
-  .fotoHome {
-    margin-top: 8rem;
   }
 }
 /*---------- Tablet----------------- */
@@ -551,6 +549,9 @@ button:hover {
   .whatsapp-button {
     display: block;
   }
+  .carousel {
+    margin-top: 14rem;
+  }
   .carousel-item img {
     max-height: 200px;
   }
@@ -588,13 +589,12 @@ button:hover {
   .visionImage {
     margin-top: 2rem;
   }
-  .infoGral {
-    background-position: center;
-    background-size: 100% auto;
+  .background-image .cuestionario {
+    margin-top: 20rem;
   }
+  /*---------- Mobile----------------- */
 }
-/*---------- Mobile----------------- */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 780px) and (max-width: 480px) {
   .navbar {
     padding: 10px;
   }
@@ -683,7 +683,10 @@ button:hover {
   }
   .fotoHome img {
     border-radius: 50%;
-    margin-top: 10%;
+    margin-top: 14%;
+  }
+  .carousel {
+    margin-top: 14rem;
   }
 }
 /*------------------------ Navbar-------------------------------- */

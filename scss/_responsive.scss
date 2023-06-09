@@ -20,7 +20,7 @@
   .fotoHome img {
     max-width: 58%;
     height: auto;
-    margin-top: 6%;
+    margin-top: 19%;
     border-radius: 50%;
   }
 
@@ -88,10 +88,6 @@
 
   .formulario form {
     padding: 3rem;
-  }
-
-  .fotoHome {
-    margin-top: 8rem;
   }
 
 }
@@ -177,6 +173,10 @@
     display: block;
   }
 
+  .carousel{
+    margin-top: 14rem;
+  }
+
   .carousel-item img {
     max-height: 200px;
   }
@@ -209,11 +209,11 @@
     margin-top: 2rem;
   }
 
-  .infoGral {
-    background-position: center;
-    background-size: 100% auto;
-  }
+
+  .background-image .cuestionario {
+    margin-top: 20rem;
 }
+
 
 /*---------- Mobile----------------- */
 @media screen and (max-width: 480px) {
@@ -307,8 +307,10 @@
 
   .fotoHome img {
     border-radius: 50%;
-    margin-top: 10%;
-
+    margin-top: 14%;
   }
-
+  .carousel{
+    margin-top: 14rem;
+  }
+}
 }
