@@ -122,11 +122,11 @@
 
 .mainNuestrosJuegos {
   grid-template-columns: repeat(2, 1fr);
-  margin-top: 15rem;
+  margin-top: 20rem;
 }
 
 .background-image .cuestionario {
-  margin-top: 5rem;
+  margin-top: 12rem;
   padding: 1rem;
 }
 
@@ -274,4 +274,8 @@
   .formulario form {
     padding: 1rem;
   }
+}
+
+.background-image .cuestionario {
+  margin-top: 23rem;
 }

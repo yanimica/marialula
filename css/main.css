@@ -32,7 +32,7 @@
   background-image: url(../assets/img/fondo\ degrade.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 4rem;
+  margin-top: 5rem;
 }
 
 .container {
@@ -78,7 +78,7 @@
 
 .carousel-inner .carousel-item img {
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   width: 100%;
   height: 100%;
 }
@@ -370,13 +370,13 @@ button:hover {
 }
 
 /*----------MEDIA QUERIES--------*/
-/*-------- desktop-------------- */
+/*--------------------- desktop----------------- */
 @media screen and (max-width: 1200px) {
   .navbar {
     padding: 10px 40px;
   }
   .video-container {
-    height: 80vh;
+    height: 200px;
   }
 }
 .mainNuestrosJuegos {
@@ -511,11 +511,11 @@ button:hover {
 }
 .mainNuestrosJuegos {
   grid-template-columns: repeat(2, 1fr);
-  margin-top: 15rem;
+  margin-top: 20rem;
 }
 
 .background-image .cuestionario {
-  margin-top: 5rem;
+  margin-top: 12rem;
   padding: 1rem;
 }
 
@@ -600,7 +600,6 @@ button:hover {
   .container {
     margin-top: 3rem;
   }
-
   .fotoHome img {
     max-width: 90%;
     height: auto;
@@ -670,15 +669,11 @@ button:hover {
     padding: 1rem;
   }
 }
+.background-image .cuestionario {
+  margin-top: 23rem;
+}
+
 /*------------------------ Navbar-------------------------------- */
-body {
-  padding-top: 80px;
-}
-
-body > *:first-child {
-  margin-top: 80px;
-}
-
 nav {
   background-color: #ffffff;
   padding: 10px;
@@ -686,9 +681,6 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  /*  display: flex;
-   justify-content: center;
-   align-items: center; */
   z-index: 100;
 }
 
@@ -702,15 +694,8 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /*  width: 100%; */
   max-width: 1200px;
   padding: 10px 20px;
-  /*   margin-top: 6px; */
-  /* position: fixed; */
-  /*   top: 0;
-    left: 0;
-    right: 0;
-    z-index: 999; */
   margin: 0 auto;
 }
 
@@ -745,18 +730,6 @@ nav {
 }
 
 /*------------------------ Index-------------------------------- */
-/* .video-container {
-  position: relative;
-  height: 100vh;
-
-  video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    object-fit: cover;
-  }
-} */
 .video-container {
   position: relative;
   height: 100vh;
