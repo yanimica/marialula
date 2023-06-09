@@ -7,7 +7,7 @@
 }
 .background-image .cuestionario {
   padding: 1.5rem;
-  margin-top: 5rem;
+  margin-top: 10rem;
 }
 
 .imgFichas {
@@ -32,7 +32,7 @@
   background-image: url(../assets/img/fondo\ degrade.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 5rem;
+  margin-top: 10rem;
 }
 
 .container {
@@ -370,7 +370,7 @@ button:hover {
 }
 
 /*----------MEDIA QUERIES--------*/
-/*--------------------- desktop----------------- */
+/*---------- desktop---------------- */
 @media screen and (max-width: 1200px) {
   .navbar {
     padding: 10px 40px;
@@ -378,114 +378,98 @@ button:hover {
   .video-container {
     height: 200px;
   }
+  .mainNuestrosJuegos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .background-image .cuestionario {
+    margin-top: 8rem;
+  }
+  .fotoHome img {
+    max-width: 58%;
+    height: auto;
+    margin-top: 6%;
+    border-radius: 50%;
+  }
+  .infoGral {
+    padding: 2rem;
+  }
+  .infoNuestra h2,
+  .infoNuestra p {
+    text-align: center;
+  }
+  .mision,
+  .vision {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .misionContent,
+  .visionContent {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    padding-right: 1rem;
+    text-align: center;
+  }
+  .misionImage,
+  .visionImage {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ubicacion {
+    text-align: center;
+  }
+  .ubicacion iframe {
+    margin-top: 1rem;
+    width: 600px;
+    height: 450px;
+  }
+  .footer .foot {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer .foot img {
+    width: 100px;
+    height: auto;
+    margin-right: 1rem;
+  }
+  .whatsapp-button {
+    display: none;
+  }
+  .carousel-item img {
+    max-height: 300px;
+    margin-top: 10rem;
+  }
+  .formulario form {
+    padding: 3rem;
+  }
+  .fotoHome {
+    margin-top: 8rem;
+  }
 }
-.mainNuestrosJuegos {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.background-image .cuestionario {
-  margin-top: 8rem;
-}
-
-.fotoHome img {
-  max-width: 58%;
-  height: auto;
-  margin-top: 6%;
-  border-radius: 50%;
-}
-
-.infoGral {
-  padding: 2rem;
-}
-
-.infoNuestra h2,
-.infoNuestra p {
-  text-align: center;
-}
-
-.mision,
-.vision {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.misionContent,
-.visionContent {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 50%;
-          flex: 0 0 50%;
-  padding-right: 1rem;
-  text-align: center;
-}
-
-.misionImage,
-.visionImage {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.ubicacion {
-  text-align: center;
-}
-
-.ubicacion iframe {
-  margin-top: 1rem;
-  width: 600px;
-  height: 450px;
-}
-
-.footer .foot {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.footer .foot img {
-  width: 100px;
-  height: auto;
-  margin-right: 1rem;
-}
-
-.whatsapp-button {
-  display: none;
-}
-
-.carousel-item img {
-  max-height: 300px;
-  margin-top: 10rem;
-}
-
-.formulario form {
-  padding: 3rem;
-}
-
-.fotoHome {
-  margin-top: 8rem;
-}
-
-/*--------------------- Tablet----------------- */
+/*---------- Tablet----------------- */
 @media screen and (max-width: 780px) {
   .navbar {
     -webkit-box-orient: vertical;
@@ -512,122 +496,104 @@ button:hover {
   .video-container {
     height: 60vh;
   }
+  .mainNuestrosJuegos {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 20rem;
+  }
+  .background-image .cuestionario {
+    margin-top: 12rem;
+    padding: 1rem;
+  }
+  .fotoHome img {
+    max-width: 70%;
+    height: auto;
+    margin-top: 10%;
+    border-radius: 50%;
+  }
+  .infoGral {
+    padding: 1.5rem;
+  }
+  .infoNuestra h2,
+  .infoNuestra p {
+    text-align: center;
+  }
+  .mision,
+  .vision {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .misionContent,
+  .misionImage,
+  .visionContent,
+  .visionImage {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    text-align: center;
+  }
+  .ubicacion iframe {
+    width: 100%;
+    height: 300px;
+  }
+  .footer .foot img {
+    width: 80px;
+    height: auto;
+    margin-right: 0;
+  }
+  .whatsapp-button {
+    display: block;
+  }
+  .carousel-item img {
+    max-height: 200px;
+  }
+  .formulario form {
+    padding: 2rem;
+  }
+  .fotoHome {
+    margin-top: 18rem;
+  }
+  .mision {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .vision {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .misionImage {
+    margin-top: 2rem;
+  }
+  .visionImage {
+    margin-top: 2rem;
+  }
+  .infoGral {
+    background-position: center;
+    background-size: 100% auto;
+  }
 }
-.mainNuestrosJuegos {
-  grid-template-columns: repeat(2, 1fr);
-  margin-top: 20rem;
-}
-
-.background-image .cuestionario {
-  margin-top: 12rem;
-  padding: 1rem;
-}
-
-.fotoHome img {
-  max-width: 70%;
-  height: auto;
-  margin-top: 10%;
-  border-radius: 50%;
-}
-
-.infoGral {
-  padding: 1.5rem;
-}
-
-.infoNuestra h2,
-.infoNuestra p {
-  text-align: center;
-}
-
-.mision,
-.vision {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.misionContent,
-.misionImage,
-.visionContent,
-.visionImage {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-  text-align: center;
-}
-
-.ubicacion iframe {
-  width: 100%;
-  height: 300px;
-}
-
-.footer .foot img {
-  width: 80px;
-  height: auto;
-  margin-right: 0;
-}
-
-.whatsapp-button {
-  display: block;
-}
-
-.carousel-item img {
-  max-height: 200px;
-}
-
-.formulario form {
-  padding: 2rem;
-}
-
-.fotoHome {
-  margin-top: 18rem;
-}
-
-.mision {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.vision {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.misionImage {
-  margin-top: 2rem;
-}
-
-.visionImage {
-  margin-top: 2rem;
-}
-
-.infoGral {
-  background-position: center;
-  background-size: 100% auto;
-}
-
-/*--------------------- Mobile----------------- */
+/*---------- Mobile----------------- */
 @media screen and (max-width: 480px) {
   .navbar {
     padding: 10px;
@@ -701,29 +667,25 @@ button:hover {
   .formulario form {
     padding: 1rem;
   }
+  .background-image .cuestionario {
+    margin-top: 23rem;
+  }
+  .fotoHome {
+    margin-top: 18rem;
+  }
+  .fotoHome {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .fotoHome img {
+    border-radius: 50%;
+    margin-top: 10%;
+  }
 }
-.background-image .cuestionario {
-  margin-top: 23rem;
-}
-
-.fotoHome {
-  margin-top: 18rem;
-}
-
-.fotoHome {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.fotoHome img {
-  border-radius: 50%;
-  margin-top: 10%;
-}
-
 /*------------------------ Navbar-------------------------------- */
 nav {
   background-color: #ffffff;

@@ -1,5 +1,4 @@
-/*--------------------- desktop----------------- */
-
+/*---------- desktop---------------- */
 @media screen and (max-width: 1200px) {
   .navbar {
     padding: 10px 40px;
@@ -8,96 +7,96 @@
   .video-container {
     height: 200px;
   }
+
+  .mainNuestrosJuegos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .background-image .cuestionario {
+    margin-top: 8rem;
+  }
+
+
+  .fotoHome img {
+    max-width: 58%;
+    height: auto;
+    margin-top: 6%;
+    border-radius: 50%;
+  }
+
+  .infoGral {
+    padding: 2rem;
+  }
+
+  .infoNuestra h2,
+  .infoNuestra p {
+    text-align: center;
+  }
+
+  .mision,
+  .vision {
+    display: flex;
+    align-items: center;
+  }
+
+  .misionContent,
+  .visionContent {
+    flex: 0 0 50%;
+    padding-right: 1rem;
+    text-align: center;
+  }
+
+  .misionImage,
+  .visionImage {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ubicacion {
+    text-align: center;
+  }
+
+  .ubicacion iframe {
+    margin-top: 1rem;
+    width: 600px;
+    height: 450px;
+  }
+
+  .footer .foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .footer .foot img {
+    width: 100px;
+    height: auto;
+    margin-right: 1rem;
+  }
+
+  .whatsapp-button {
+    display: none;
+  }
+
+  .carousel-item img {
+    max-height: 300px;
+    margin-top: 10rem;
+  }
+
+  .formulario form {
+    padding: 3rem;
+  }
+
+  .fotoHome {
+    margin-top: 8rem;
+  }
+
 }
 
-.mainNuestrosJuegos {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.background-image .cuestionario {
-  margin-top: 8rem;
-}
-
-
-.fotoHome img {
-  max-width: 58%;
-  height: auto;
-  margin-top: 6%;
-  border-radius: 50%;
-}
-
-.infoGral {
-  padding: 2rem;
-}
-
-.infoNuestra h2,
-.infoNuestra p {
-  text-align: center;
-}
-
-.mision,
-.vision {
-  display: flex;
-  align-items: center;
-}
-
-.misionContent,
-.visionContent {
-  flex: 0 0 50%;
-  padding-right: 1rem;
-  text-align: center;
-}
-
-.misionImage,
-.visionImage {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.ubicacion {
-  text-align: center;
-}
-
-.ubicacion iframe {
-  margin-top: 1rem;
-  width: 600px;
-  height: 450px;
-}
-
-.footer .foot {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.footer .foot img {
-  width: 100px;
-  height: auto;
-  margin-right: 1rem;
-}
-
-.whatsapp-button {
-  display: none;
-}
-
-.carousel-item img {
-  max-height: 300px;
-  margin-top: 10rem;
-}
-
-.formulario form {
-  padding: 3rem;
-}
-
-.fotoHome {
-  margin-top: 8rem;
-}
-
-/*--------------------- Tablet----------------- */
-
+/*---------- Tablet----------------- */
 @media screen and (max-width: 780px) {
   .navbar {
     flex-direction: column;
@@ -120,102 +119,103 @@
   .video-container {
     height: 60vh;
   }
+
+  .mainNuestrosJuegos {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 20rem;
+  }
+
+  .background-image .cuestionario {
+    margin-top: 12rem;
+    padding: 1rem;
+  }
+
+  .fotoHome img {
+    max-width: 70%;
+    height: auto;
+    margin-top: 10%;
+    border-radius: 50%;
+  }
+
+  .infoGral {
+    padding: 1.5rem;
+  }
+
+  .infoNuestra h2,
+  .infoNuestra p {
+    text-align: center;
+  }
+
+  .mision,
+  .vision {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .misionContent,
+  .misionImage,
+  .visionContent,
+  .visionImage {
+    flex-basis: 50%;
+    text-align: center;
+  }
+
+  .ubicacion iframe {
+    width: 100%;
+    height: 300px;
+  }
+
+  .footer .foot img {
+    width: 80px;
+    height: auto;
+    margin-right: 0;
+  }
+
+  .whatsapp-button {
+    display: block;
+  }
+
+  .carousel-item img {
+    max-height: 200px;
+  }
+
+  .formulario form {
+    padding: 2rem;
+  }
+
+  .fotoHome {
+    margin-top: 18rem;
+  }
+
+  .mision {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .vision {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .misionImage {
+    margin-top: 2rem;
+  }
+
+  .visionImage {
+    margin-top: 2rem;
+  }
+
+  .infoGral {
+    background-position: center;
+    background-size: 100% auto;
+  }
 }
 
-.mainNuestrosJuegos {
-  grid-template-columns: repeat(2, 1fr);
-  margin-top: 20rem;
-}
-
-.background-image .cuestionario {
-  margin-top: 12rem;
-  padding: 1rem;
-}
-
-.fotoHome img {
-  max-width: 70%;
-  height: auto;
-  margin-top: 10%;
-  border-radius: 50%;
-}
-
-.infoGral {
-  padding: 1.5rem;
-}
-
-.infoNuestra h2,
-.infoNuestra p {
-  text-align: center;
-}
-
-.mision,
-.vision {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.misionContent,
-.misionImage,
-.visionContent,
-.visionImage {
-  flex-basis: 50%;
-  text-align: center;
-}
-
-.ubicacion iframe {
-  width: 100%;
-  height: 300px;
-}
-
-.footer .foot img {
-  width: 80px;
-  height: auto;
-  margin-right: 0;
-}
-
-.whatsapp-button {
-  display: block;
-}
-
-.carousel-item img {
-  max-height: 200px;
-}
-
-.formulario form {
-  padding: 2rem;
-}
-
-.fotoHome {
-  margin-top: 18rem;
-}
-.mision {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.vision {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.misionImage {
-  margin-top: 2rem;
-}
-
-.visionImage {
-  margin-top: 2rem;
-}
-
-.infoGral {
-  background-position: center;
-  background-size: 100% auto;
-}
-/*--------------------- Mobile----------------- */
-
+/*---------- Mobile----------------- */
 @media screen and (max-width: 480px) {
   .navbar {
     padding: 10px;
@@ -291,23 +291,24 @@
   .formulario form {
     padding: 1rem;
   }
-}
 
-.background-image .cuestionario {
-  margin-top: 23rem;
-}
+  .background-image .cuestionario {
+    margin-top: 23rem;
+  }
 
-.fotoHome {
-  margin-top: 18rem;
-}
+  .fotoHome {
+    margin-top: 18rem;
+  }
 
-.fotoHome {
-  display: flex;
-  justify-content: center;
-}
+  .fotoHome {
+    display: flex;
+    justify-content: center;
+  }
 
-.fotoHome img{
-  border-radius: 50%;
-  margin-top: 10%;
+  .fotoHome img {
+    border-radius: 50%;
+    margin-top: 10%;
+
+  }
 
 }
