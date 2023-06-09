@@ -221,7 +221,7 @@ button:hover {
 .fotoHome img {
   max-width: 58%;
   height: auto;
-  margin-top: 6%;
+  margin-top: 10%;
   border-radius: 50%;
 }
 
@@ -481,6 +481,10 @@ button:hover {
   padding: 3rem;
 }
 
+.fotoHome {
+  margin-top: 8rem;
+}
+
 /*--------------------- Tablet----------------- */
 @media screen and (max-width: 780px) {
   .navbar {
@@ -582,6 +586,47 @@ button:hover {
   padding: 2rem;
 }
 
+.fotoHome {
+  margin-top: 18rem;
+}
+
+.mision {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.vision {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.misionImage {
+  margin-top: 2rem;
+}
+
+.visionImage {
+  margin-top: 2rem;
+}
+
+.infoGral {
+  background-position: center;
+  background-size: 100% auto;
+}
+
 /*--------------------- Mobile----------------- */
 @media screen and (max-width: 480px) {
   .navbar {
@@ -610,10 +655,6 @@ button:hover {
     padding: 1rem;
     background-image: none;
   }
-  .infoNuestra h2,
-  .infoNuestra p {
-    text-align: center;
-  }
   .mision,
   .vision {
     display: -webkit-box;
@@ -626,14 +667,6 @@ button:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  .misionContent,
-  .misionImage,
-  .visionContent,
-  .visionImage {
-    -ms-flex-preferred-size: auto;
-        flex-basis: auto;
-    text-align: center;
   }
   .ubicacion iframe {
     width: 100%;
@@ -671,6 +704,24 @@ button:hover {
 }
 .background-image .cuestionario {
   margin-top: 23rem;
+}
+
+.fotoHome {
+  margin-top: 18rem;
+}
+
+.fotoHome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fotoHome img {
+  border-radius: 50%;
+  margin-top: 10%;
 }
 
 /*------------------------ Navbar-------------------------------- */
