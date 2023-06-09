@@ -1,23 +1,23 @@
 .footer {
-    background-color: #4da9cb86;
+    background-color: #1990bb62;
     padding: 2rem;
     font-size: small;
     .foot img{
         width: 6rem;
     }
     .footer .datosEmpresa {
-        font-size: small;
+        font-size: smaller;
         }
     }
 
-.datosEmpresa .social-icon {
+
+    .datosEmpresa .social-icon {
     display: inline-block;
-    margin-right: 10px;
-    font-size: 24px;
+    font-size: 20px;
     color: rgb(51, 51, 51);
 }
 
 .datosEmpresa .social-icon:hover {
     color: #00aced;
-
 }
+

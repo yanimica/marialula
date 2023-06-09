@@ -7,48 +7,88 @@
 }
 .background-image .cuestionario {
   padding: 1.5rem;
-  margin-top: 1rem;
+  margin-top: 5rem;
+}
+
+.imgFichas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.imgFichas div img {
+  max-width: 100%;
+  height: auto;
 }
 
 .mainNuestrosJuegos {
   display: grid;
-  font-family: "Indie Flower", cursive;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, auto);
   gap: 20px;
   padding: 1.5rem;
+  background-image: url(../assets/img/fondo\ degrade.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 4rem;
 }
-.mainNuestrosJuegos .container {
+
+.container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto 1fr auto;
   grid-template-areas: "titulo titulo" "img descripcion" "botton botton";
   border: 1px solid black;
   padding: 25px;
-  margin-top: 6rem;
 }
-.mainNuestrosJuegos .container .titulo {
+
+.titulo {
   grid-area: titulo;
 }
-.mainNuestrosJuegos .container .titulo .img {
+
+.container img {
   grid-area: img;
   display: block;
-  margin: auto;
-  border-radius: 5%;
+  border-radius: 10%;
 }
-.mainNuestrosJuegos .container .titulo .img .descripcion {
+
+.descripcion {
   grid-area: descripcion;
 }
-.mainNuestrosJuegos .container .titulo .img .descripcion .botton {
+
+.botton {
   grid-area: botton;
 }
 
-.carousel-item img {
-  max-height: 400px;
+.btn-comprar {
+  -webkit-transition: -webkit-transform 0.8s, -webkit-box-shadow 0.8s;
+  transition: -webkit-transform 0.8s, -webkit-box-shadow 0.8s;
+  transition: transform 0.8s, box-shadow 0.8s;
+  transition: transform 0.8s, box-shadow 0.8s, -webkit-transform 0.8s, -webkit-box-shadow 0.8s;
+}
+
+.btn-comprar:active {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-box-shadow: 0 0 8px rgba(97, 109, 128, 0.4);
+          box-shadow: 0 0 8px rgba(97, 109, 128, 0.4);
+}
+
+.carousel-inner .carousel-item img {
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
-.carousel-item img .container-fluid {
+
+.carousel-item img {
+  max-height: 100%;
+  height: 50px;
+}
+
+.container-fluid {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -66,8 +106,11 @@ form {
       -ms-flex-align: center;
           align-items: center;
   padding: 5rem;
+  background-image: url(../assets/img/fondo\ degrade.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-form .form-group {
+form form-group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,17 +120,19 @@ form .form-group {
           flex-direction: column;
   margin: 10px 0;
 }
-form .form-group label {
+
+label {
   margin-bottom: 5px;
 }
-form .form-group label input[type=email] {
+label input[type=email] {
   padding: 10px;
   border-radius: 5px;
   border: none;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
-form .form-group label input[type=email] button {
+
+button {
   padding: 10px;
   border-radius: 5px;
   border: none;
@@ -97,23 +142,213 @@ form .form-group label input[type=email] button {
   cursor: pointer;
   -webkit-transition: background-color 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
+  margin-top: 2rem;
 }
-form .form-group label input[type=email] button button:hover {
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+.formulario form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5rem;
+  background-image: url(../assets/img/fondo\ degrade.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.formulario .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px 0;
+}
+
+.formulario label {
+  margin-bottom: 5px;
+}
+
+.formulario input[type=email] {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.formulario button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  margin-top: 2rem;
+}
+
+.formulario button:hover {
   background-color: #3e8e41;
 }
 
 .fotoHome {
-  overflow-x: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fotoHome img {
+  max-width: 58%;
+  height: auto;
+  margin-top: 6%;
+  border-radius: 50%;
+}
+
+.infoGral {
+  padding: 2rem;
+  background-image: url(../assets/img/fondo\ degrade.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .infoNuestra {
-  padding: 1.5rem;
-  background-color: bisque;
+  margin-top: 3rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.infoNuestra h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.infoNuestra p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mision {
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.misionContent {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-right: 1rem;
+}
+
+.misionImage {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.vision {
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.visionContent {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  padding-right: 1rem;
+}
+
+.visionImage {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ubicacion {
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.ubicacion h2 {
+  margin-bottom: 1rem;
+}
+
+.ubicacion iframe {
+  margin-top: 1rem;
 }
 
 /*----------PIE DE PÁGINA--------*/
 .footer {
-  background-color: rgba(77, 169, 203, 0.5254901961);
+  background-color: rgba(25, 144, 187, 0.3843137255);
   padding: 2rem;
   font-size: small;
 }
@@ -121,13 +356,12 @@ form .form-group label input[type=email] button button:hover {
   width: 6rem;
 }
 .footer .footer .datosEmpresa {
-  font-size: small;
+  font-size: smaller;
 }
 
 .datosEmpresa .social-icon {
   display: inline-block;
-  margin-right: 10px;
-  font-size: 24px;
+  font-size: 20px;
   color: rgb(51, 51, 51);
 }
 
@@ -138,170 +372,408 @@ form .form-group label input[type=email] button button:hover {
 /*----------MEDIA QUERIES--------*/
 /*--------------------- desktop----------------- */
 @media screen and (max-width: 1200px) {
-  .menu-toggle {
-    display: block;
+  .navbar {
+    padding: 10px 40px;
   }
-  .menu-icon {
-    display: block;
-    font-size: 24px;
-    cursor: pointer;
-  }
-  .menu-toggle:checked ~ .menu {
-    display: block;
+  .video-container {
+    height: 80vh;
   }
 }
-.menu {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+.mainNuestrosJuegos {
+  grid-template-columns: repeat(3, 1fr);
 }
 
-/*--------------------- Tablet----------------- */
-@media screen and (max-width: 780px) {
-  .menu {
-    display: none;
-  }
-  .menu-toggle:checked ~ .menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 100%;
-    padding: 20px 0;
-    background-color: #fff;
-    position: fixed;
-    top: 80px;
-    left: 0;
-    z-index: 999;
-    opacity: 1;
-    pointer-events: auto;
-    -webkit-transition: opacity 0.3s ease;
-    transition: opacity 0.3s ease;
-  }
-  .menu-toggle:checked ~ .menu li {
-    margin: 10px 0;
-  }
-}
-/*--------------------- Mobile----------------- */
-@media screen and (max-width: 480px) {
-  .menu {
-    display: none;
-  }
-  .menu-toggle:checked ~ .menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 100%;
-    padding: 20px 0;
-    background-color: #fff;
-  }
-  .menu-toggle:checked ~ .menu li {
-    margin: 10px 0;
-  }
-}
-/*------------------------ Navbar-------------------------------- */
-body {
-  padding-top: 5px;
+.background-image .cuestionario {
+  margin-top: 8rem;
 }
 
-body > *:first-child {
-  margin-top: 80px;
+.fotoHome img {
+  max-width: 58%;
+  height: auto;
+  margin-top: 6%;
+  border-radius: 50%;
 }
 
-.navbar {
+.infoGral {
+  padding: 2rem;
+}
+
+.infoNuestra h2,
+.infoNuestra p {
+  text-align: center;
+}
+
+.mision,
+.vision {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 20px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 9999;
-  background-color: #fff;
 }
 
-.navbar a {
-  -webkit-transition: background-color 0.3s ease;
-  transition: background-color 0.3s ease;
+.misionContent,
+.visionContent {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  padding-right: 1rem;
+  text-align: center;
 }
 
-.navbar a:hover {
-  background-color: #ccc;
-}
-
-.navbar .logo img {
-  height: 100px;
-}
-
-.menu {
+.misionImage,
+.visionImage {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ubicacion {
+  text-align: center;
+}
+
+.ubicacion iframe {
+  margin-top: 1rem;
+  width: 600px;
+  height: 450px;
+}
+
+.footer .foot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer .foot img {
+  width: 100px;
+  height: auto;
+  margin-right: 1rem;
+}
+
+.whatsapp-button {
+  display: none;
+}
+
+.carousel-item img {
+  max-height: 300px;
+  margin-top: 10rem;
+}
+
+.formulario form {
+  padding: 3rem;
+}
+
+/*--------------------- Tablet----------------- */
+@media screen and (max-width: 780px) {
+  .navbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px;
+  }
+  .logo {
+    margin-bottom: 10px;
+  }
+  .nav-links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nav-links li {
+    margin: 5px 0;
+  }
+  .video-container {
+    height: 60vh;
+  }
+}
+.mainNuestrosJuegos {
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 15rem;
+}
+
+.background-image .cuestionario {
+  margin-top: 5rem;
+  padding: 1rem;
+}
+
+.fotoHome img {
+  max-width: 70%;
+  height: auto;
+  margin-top: 10%;
+  border-radius: 50%;
+}
+
+.infoGral {
+  padding: 1.5rem;
+}
+
+.infoNuestra h2,
+.infoNuestra p {
+  text-align: center;
+}
+
+.mision,
+.vision {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.misionContent,
+.misionImage,
+.visionContent,
+.visionImage {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  text-align: center;
+}
+
+.ubicacion iframe {
+  width: 100%;
+  height: 300px;
+}
+
+.footer .foot img {
+  width: 80px;
+  height: auto;
+  margin-right: 0;
+}
+
+.whatsapp-button {
+  display: block;
+}
+
+.carousel-item img {
+  max-height: 200px;
+}
+
+.formulario form {
+  padding: 2rem;
+}
+
+/*--------------------- Mobile----------------- */
+@media screen and (max-width: 480px) {
+  .navbar {
+    padding: 10px;
+  }
+  .logo img {
+    width: 5rem;
+  }
+  .video-container {
+    height: 40vh;
+  }
+  .mainNuestrosJuegos {
+    grid-template-columns: 1fr;
+    margin-top: 20rem;
+  }
+  .container {
+    margin-top: 3rem;
+  }
+  /* 
+          .background-image .cuestionario {
+              margin-top: 10rem;
+              padding: 0.5rem;
+            } */
+  .fotoHome img {
+    max-width: 90%;
+    height: auto;
+    margin-top: 10%;
+    border-radius: 0;
+  }
+  .infoGral {
+    padding: 1rem;
+    background-image: none;
+  }
+  .infoNuestra h2,
+  .infoNuestra p {
+    text-align: center;
+  }
+  .mision,
+  .vision {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .misionContent,
+  .misionImage,
+  .visionContent,
+  .visionImage {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    text-align: center;
+  }
+  .ubicacion iframe {
+    width: 100%;
+    height: 200px;
+  }
+  .footer .foot {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .footer .foot img {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  .whatsapp-button {
+    display: block;
+  }
+  .carousel-item img {
+    max-height: 150px;
+  }
+  .formulario form {
+    padding: 1rem;
+  }
+}
+/*------------------------ Navbar-------------------------------- */
+body {
+  padding-top: 80px;
+}
+
+body > *:first-child {
+  margin-top: 80px;
+}
+
+nav {
+  background-color: #ffffff;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /*  display: flex;
+   justify-content: center;
+   align-items: center; */
+  z-index: 100;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*  width: 100%; */
+  max-width: 1200px;
+  padding: 10px 20px;
+  /*   margin-top: 6px; */
+  /* position: fixed; */
+  /*   top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999; */
+  margin: 0 auto;
+}
+
+.logo img {
+  width: 7rem;
+}
+
+.nav-links {
+  list-style-type: none;
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.menu li {
-  margin-left: 20px;
+.nav-links li {
+  margin-left: 10px;
 }
 
-.menu a {
+.nav-links li a {
   text-decoration: none;
-  color: #000;
-  font-size: 18px;
+  color: #333;
+  padding: 5px;
+  border-radius: 5px;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.nav-links li a:hover {
+  background-color: #ddd;
 }
 
 /*------------------------ Index-------------------------------- */
+/* .video-container {
+  position: relative;
+  height: 100vh;
+
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+  }
+} */
 .video-container {
   position: relative;
   height: 100vh;
 }
+
 .video-container video {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-.video-container video .content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  text-align: center;
-  color: #fff;
-}
-.video-container video .content h1 {
-  font-size: 4rem;
-  margin-bottom: 20px;
-}
-.video-container video .content h1 p {
-  font-size: 2rem;
 }
 
 /*----------------------------- final-------------------------------- */

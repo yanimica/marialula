@@ -1,71 +1,251 @@
 /*--------------------- desktop----------------- */
 
 @media screen and (max-width: 1200px) {
-    .menu-toggle {
-        display: block;
+    .navbar {
+        padding: 10px 40px;
+      }
+
+      .video-container {
+        height: 80vh;
+      }
     }
 
-    .menu-icon {
-        display: block;
-        font-size: 24px;
-        cursor: pointer;
+    .mainNuestrosJuegos {
+        grid-template-columns: repeat(3, 1fr);
     }
+    .background-image .cuestionario {
+        margin-top: 8rem;
+      }
 
-    .menu-toggle:checked~.menu {
-        display: block;
-    }
-}
 
-.menu {
-    display: flex !important;
-    justify-content: flex-end;
-}
+      .fotoHome img {
+        max-width: 58%;
+        height: auto;
+        margin-top: 6%;
+        border-radius: 50%;
+      }
+      .infoGral {
+        padding: 2rem;
+      }
+      .infoNuestra h2,
+      .infoNuestra p {
+        text-align: center;
+      }
+      .mision,
+      .vision {
+        display: flex;
+        align-items: center;
+      }
+      .misionContent,
+      .visionContent {
+        flex: 0 0 50%;
+        padding-right: 1rem;
+        text-align: center;
+      }
+      .misionImage,
+      .visionImage {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .ubicacion {
+        text-align: center;
+      }
+      .ubicacion iframe {
+        margin-top: 1rem;
+        width: 600px;
+        height: 450px;
+      }
+      .footer .foot {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .footer .foot img {
+        width: 100px;
+        height: auto;
+        margin-right: 1rem;
+      }
+      .whatsapp-button {
+        display: none;
+      }
+
+      .carousel-item img {
+        max-height: 300px;
+        margin-top: 10rem;
+      }
+    
+      .formulario form {
+        padding: 3rem;
+      }
+
+
 
 /*--------------------- Tablet----------------- */
 
 @media screen and (max-width: 780px) {
-    .menu {
-        display: none;
-    }
-
-    .menu-toggle:checked~.menu {
-        display: flex;
+    .navbar {
         flex-direction: column;
         align-items: center;
-        width: 100%;
-        padding: 20px 0;
-        background-color: #fff;
-        position: fixed;
-        top: 80px;
-        left: 0;
-        z-index: 999;
-        opacity: 1;
-        pointer-events: auto;
-        transition: opacity 0.3s ease;
+        padding: 10px;
+      }
+    
+      .logo {
+        margin-bottom: 10px;
+      }
+    
+      .nav-links {
+        flex-direction: column;
+      }
+    
+      .nav-links li {
+        margin: 5px 0;
+      }
+      .video-container {
+        height: 60vh;
+      }
     }
+    .mainNuestrosJuegos {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 15rem;
+    }
+    .background-image .cuestionario {
+        margin-top: 5rem;
+        padding: 1rem;
+      }
 
-    .menu-toggle:checked~.menu li {
-        margin: 10px 0;
-    }
-}
+      .fotoHome img {
+        max-width: 70%;
+        height: auto;
+        margin-top: 10%;
+        border-radius: 50%;
+      }
+      .infoGral {
+        padding: 1.5rem;
+      }
+      .infoNuestra h2,
+      .infoNuestra p {
+        text-align: center;
+      }
+      .mision,
+      .vision {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .misionContent,
+      .misionImage,
+      .visionContent,
+      .visionImage {
+        flex-basis: 50%;
+        text-align: center;
+      }
+      .ubicacion iframe {
+        width: 100%;
+        height: 300px;
+      }
+      .footer .foot img {
+        width: 80px;
+        height: auto;
+        margin-right: 0;
+      }
+      .whatsapp-button {
+        display: block;
+      }
+
+      .carousel-item img {
+        max-height: 200px;
+      }
+    
+      .formulario form {
+        padding: 2rem;
+      }
+
 
 /*--------------------- Mobile----------------- */
 
 @media screen and (max-width: 480px) {
-    .menu {
-        display: none;
-    }
+    .navbar {
+        padding: 10px;
+      }
+    
+      .logo img {
+        width: 5rem;
+      }
+      .video-container {
+        height: 40vh;
+        }
+        .mainNuestrosJuegos {
+            grid-template-columns: 1fr;
+            margin-top: 20rem;
+        }
+        .container {
+            margin-top: 3rem;
+        }
 
-    .menu-toggle:checked~.menu {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        padding: 20px 0;
-        background-color: #fff;
-    }
 
-    .menu-toggle:checked~.menu li {
-        margin: 10px 0;
-    }
+/* 
+        .background-image .cuestionario {
+            margin-top: 10rem;
+            padding: 0.5rem;
+          } */
+          .fotoHome img {
+            max-width: 90%;
+            height: auto;
+            margin-top: 10%;
+            border-radius: 0;
+          }
+          .infoGral {
+            padding: 1rem;
+            background-image: none;
+          }
+          .infoNuestra h2,
+          .infoNuestra p {
+            text-align: center;
+          }
+          .mision,
+          .vision {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+          .misionContent,
+          .misionImage,
+          .visionContent,
+          .visionImage {
+            flex-basis: auto;
+            text-align: center;
+          }
+          .ubicacion iframe {
+            width: 100%;
+            height: 200px;
+          }
+          .footer .foot {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 2rem;
+            box-sizing: border-box;
+          }
+          .footer .foot img {
+            margin-right: 0;
+            margin-bottom: 1rem;
+          }
+          .whatsapp-button {
+            display: block;
+          }
+          .carousel-item img {
+            max-height: 150px;
+          }
+        
+          .formulario form {
+            padding: 1rem;
+          }
 }
+

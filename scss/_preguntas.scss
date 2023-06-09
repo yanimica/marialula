@@ -5,7 +5,17 @@
     background-size: cover;
     .cuestionario {
         padding: 1.5rem;
-        margin-top: 1rem;
+        margin-top: 5rem;
     }
     
 }
+
+.imgFichas {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .imgFichas div img {
+    max-width: 100%;
+    height: auto;
+  }
