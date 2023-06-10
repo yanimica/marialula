@@ -150,6 +150,7 @@
     flex-wrap: wrap;
   }
 
+
   .misionContent,
   .misionImage,
   .visionContent,
@@ -263,6 +264,13 @@
     align-items: center;
   }
 
+  .misionImage img{
+    width: 100%;
+    }
+    
+    .visionImage img{
+    width: 100%;
+    }
 
   .ubicacion iframe {
     width: 100%;
