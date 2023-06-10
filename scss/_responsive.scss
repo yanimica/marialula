@@ -189,6 +189,11 @@
     margin-top: 18rem;
   }
 
+  .fotoHome img {
+    max-width: 40%;
+    margin-top: 8rem;
+  }
+
   .mision {
     display: flex;
     align-items: center;
@@ -213,7 +218,7 @@
   .background-image .cuestionario {
     margin-top: 20rem;
 }
-
+}
 
 /*---------- Mobile----------------- */
 @media screen and (max-width: 480px) {
@@ -308,9 +313,10 @@
   .fotoHome img {
     border-radius: 50%;
     margin-top: 14%;
+    max-width: 80%;
+    margin-top: 6rem;
   }
   .carousel{
     margin-top: 14rem;
   }
-}
 }
