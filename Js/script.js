@@ -1,4 +1,4 @@
-
+/* 
 ////////////////////////////////////Primera entrega///////////////////////////////////
 
 let botones = document.querySelectorAll(".botton");
@@ -90,7 +90,5 @@ compra.agregarGenero("Masculino");
 console.log("Lista de Generos: " + compra.obtenerGeneros());
 
 
-compra.obtenerProductos().forEach(producto => console.log(`agarre ${producto}`))
-
-
+compra.obtenerProductos().forEach(producto => console.log(`agarre ${producto}`)) */
 
