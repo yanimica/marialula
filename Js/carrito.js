@@ -1,6 +1,6 @@
 
+let productos_seleccionados = [];
 let productos = [
-
     {
         id: 1,
         nombre: "Cubo",
@@ -80,31 +80,31 @@ for (let i = 0; i < productos.length; i++) {
             </div>
             <h3>Precio: $${producto.precio}</h3>
             <div class="botton">
-                <button class="btn-comprar" id="equilibrio" type="submit">Agregar</button>
+                <button class="btn-comprar" id="${producto.nombre}" type="submit">Agregar</button>
             </div>
         </div>`
 
     carrito.innerHTML += cardHTML;
-}
+}   
 
 function onClick(event){
-    console.log("Agregado al carrito");
+    const nombre = event.target.id;
+    Swal.fire({
+        title: "Producto Agregado al Carrito",
+        text: `${nombre} ha sido agregado a tu carrito.`,
+        icon: "success",
+        confirmButtonText: "Aceptar",
+    });
+    const producto =  productos.find(p => p.nombre == nombre);
+    const enJSON    = JSON.stringify(producto);
+    productos_seleccionados.push(enJSON);
+    localStorage.setItem("productos", productos_seleccionados);
+    console.log("Productos seleccionados:", productos_seleccionados);
 }
 
-const botones = document.querySelectorAll(".botton");
+const botones = document.querySelectorAll(".btn-comprar");
 
 for (let index = 0; index < botones.length; index++) {
     const boton = botones[index];
     boton.addEventListener('click',onClick);
 }
-
-
-localStorage.setItem("comprar", "agregaste al carrito")
-
-const producto1 = {id: 1, nombre: "cubo", precio: 5500};
-
-const enJSON    = JSON.stringify(producto1);
-
-console.log(enJSON);
-
-localStorage.setItem("clave", enJSON);

@@ -1,7 +1,7 @@
-/* 
+
 ////////////////////////////////////Primera entrega///////////////////////////////////
 
-let botones = document.querySelectorAll(".botton");
+/* let botones = document.querySelectorAll(".botton");
 
 function onClick(event) {
 
@@ -28,10 +28,9 @@ function onClick(event) {
 botones.forEach(
     boton => boton.addEventListener("click", onClick)
 );
-
+ */
 
 ///////////////////////////////Segunda entrega/////////////////////////////////
-
 
 class Compra{
 
@@ -90,5 +89,12 @@ compra.agregarGenero("Masculino");
 console.log("Lista de Generos: " + compra.obtenerGeneros());
 
 
-compra.obtenerProductos().forEach(producto => console.log(`agarre ${producto}`)) */
+compra.obtenerProductos().forEach(producto => console.log(`agarre ${producto}`))
+
+
+
+fetch('../../data.json')
+    .then(response => response.json())
+    .then(json => console.log(json))
+
 

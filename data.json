@@ -1,0 +1,10 @@
+[
+    {"nombre": "Cubo", "id": "Producto 1", "precio": 5500 },
+    {"nombre": "Tobogan", "id": "Producto 2", "precio": 7200 },
+    {"nombre": "Rampa", "id": "Producto 3", "precio": 3800 },
+    {"nombre": "Mesa", "id": "Producto 4", "precio": 7400 },
+    {"nombre": "Triangulo", "id": "Producto 5", "precio": 4300 },
+    {"nombre": "Encastre", "id": "Producto 6", "precio": 5200 },
+    {"nombre": "Circulo", "id": "Producto 7", "precio": 4800 },
+    {"nombre": "Plaa completa", "id": "Producto 8", "precio": 7900 }
+]
