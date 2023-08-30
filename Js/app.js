@@ -1,4 +1,5 @@
 // Variables Globales
+
 let logoCarrito = document.getElementById("logoCarrito");
 let productos_seleccionados = [];
 let productos = [
@@ -106,6 +107,19 @@ function mostrarCarrito() {
     
 
     carritoHTML += "</ul>";
+    Swal.fire({
+        title: 'Tu Carrito de Compras',
+        html: carritoHTML,
+        icon: 'info',
+        confirmButtonText: 'Cerrar',
+    }).then((result) => {
+        if (result.isConfirmed) {
+            window.location.href = '/assets/pages/nuestrosjuegos.html';
+        }
+    });
+
+
+
     document.getElementById("carrito").innerHTML = carritoHTML;
 }
 
@@ -142,10 +156,13 @@ function agregarAlCarrito(event) {
     let producto = productos.find(p => p.nombre == nombre);
     productos_seleccionados.push(producto);
     localStorage.setItem("carrito", JSON.stringify(productos_seleccionados));
+    mostrarCarrito(); // Llamada para actualizar el contenido del carrito
 }
 
-//Nota: Cada vez que se carga el DOM, recalculo es estado del sistema
+//Nota: Cada vez que se carga el DOM, recalculo el estado del sistema
 document.addEventListener('DOMContentLoaded',()=>{
+
+    logoCarrito.addEventListener("click", mostrarCarrito);
 
     // Paso 1. Obtengo los productos a la venta del Backend
     fetch('../../data.json')
