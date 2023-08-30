@@ -1,10 +1,58 @@
 [
-    {"nombre": "Cubo", "id": "Producto 1", "precio": 5500 },
-    {"nombre": "Tobogan", "id": "Producto 2", "precio": 7200 },
-    {"nombre": "Rampa", "id": "Producto 3", "precio": 3800 },
-    {"nombre": "Mesa", "id": "Producto 4", "precio": 7400 },
-    {"nombre": "Triangulo", "id": "Producto 5", "precio": 4300 },
-    {"nombre": "Encastre", "id": "Producto 6", "precio": 5200 },
-    {"nombre": "Circulo", "id": "Producto 7", "precio": 4800 },
-    {"nombre": "Plaa completa", "id": "Producto 8", "precio": 7900 }
+    {
+        "id": 1,
+        "nombre": "Cubo",
+        "precio": 5500,
+        "imagen": "../../assets/img/cubo.jpg",
+        "descripcion": "Ayuda a los niños pequeños a obtener experiencia de espacio.Pueden jugar y desarrollar su motricidad, equilibrio, seguridad, coordinación y visión"
+    },
+    {
+        "id": 2,
+        "nombre": "Tobogan",
+        "precio": 7200,
+        "imagen": "../../assets/img/tobogan.jpg",
+        "descripcion": "Suma complejidad a la exploración del movimiento, la motricidad y la autonomia, transformando la exploración motriz en un juego con equilibrio y altura"
+    },
+    {
+        "id": 3,
+        "nombre": "Rampa",
+        "precio": 3800,
+        "imagen": "../../assets/img/rampa.jpg",
+        "descripcion": "Es la combinación perfecta del triángulo, cubo.Suma complejidad a la exploración del movimiento, la motricidad y la autonomia, transformando la exploración motriz en un juego con equilibrio y altura"
+    },
+    {
+        "id": 4,
+        "nombre": "Mesa",
+        "precio": 7400,
+        "imagen": "../../assets/img/mesa silla.jpg",
+        "descripcion": "Las sillas pueden ser mesa, y tambien pueden ser utilizadas en dos alturas acompañando el crecimiento de los peques"
+    },
+    {
+        "id": 5,
+        "nombre": "Triangulo",
+        "precio": 4300,
+        "imagen": "../../assets/img/triangulo.jpg",
+        "descripcion": "Complemento perfecto de la Rampa, a la cual sirve de apoyo para transformarse en un ascenso o descenso.Además sirve de sostén para comenzar a pararse, y al empujarlo acompaña los primeros pasos."
+    },
+    {
+        "id": 6,
+        "nombre": "Encastre",
+        "precio": 5200,
+        "imagen": "../../assets/img/encastre redondo.jpg",
+        "descripcion": "Se comprende conceptos como el equilibrio, la simetría y la resistencia.Además, les obliga a planificar y aplicar la lógica."
+    },
+    {
+        "id": 7,
+        "nombre": "Circulo",
+        "precio": 4800,
+        "imagen": "../../assets/img/circulo.jpg",
+        "descripcion": "A través de él van comprendiendo conceptos complejos como el equilibrio, la simetría y la resistencia.Les abre la puerta de par en par al juego simbólico"
+    },
+    {
+        "id": 8,
+        "nombre": "Plaza Completa",
+        "precio": 7900,
+        "imagen": "../../assets/img/plaza completa.png",
+        "descripcion": "Incluye:Triangulo,Rampa,Cubo,Cilindro,Balancin"
+    }
 ]

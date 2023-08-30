@@ -763,7 +763,7 @@ button:hover {
   }
 }
 
-/*------------------------ Navbar-------------------------------- */
+/*------------------------ Navbar------------------------------------ */
 nav {
   background-color: #ffffff;
   padding: 10px;
@@ -783,14 +783,20 @@ nav {
   justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
+  align-items:center;
   max-width: 1200px;
-  padding: 10px 20px;
+  /* justify-content: right; */
+  padding: 19px 27px;
   margin: 0 auto;
 }
 
+
 .logo img {
-  width: 7rem;
+  width: 8rem;
+}
+
+.logoCarrito{
+  width: 0rem;
 }
 
 .nav-links {
@@ -799,17 +805,13 @@ nav {
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
 }
 
-.nav-links li {
-  margin-left: 10px;
-}
 
 .nav-links li a {
   text-decoration: none;
   color: #333;
-  padding: 5px;
+  padding: 6px;
   border-radius: 5px;
   -webkit-transition: background-color 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
@@ -818,6 +820,8 @@ nav {
 .nav-links li a:hover {
   background-color: #ddd;
 }
+
+
 
 /*------------------------ Index-------------------------------- */
 .video-container {
